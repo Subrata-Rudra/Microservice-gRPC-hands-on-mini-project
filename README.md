@@ -13,15 +13,15 @@ The primary aim of this project is to showcase the use of gRPC (Remote Procedure
 
 1. **API Service (Node.js)**:
    - Handles incoming API requests.
-   - Communicates with other services via gRPC.
+   - Communicates with other services(NodeJS service and Python service) via gRPC.
 
 2. **NodeJS Service (Node.js)**:
-   - Provides specific business functionalities.
-   - Communicates with the API Service and Python Service via gRPC.
+   - Provides specific functionalities - sayHello(prints greeting message using javascript), sum(adds two numbers using javascript).
+   - Communicates with the API Service via gRPC.
 
 3. **Python Service (Python)**:
-   - Provides specific business functionalities.
-   - Communicates with the NodeJS Service via gRPC.
+   - Provides specific functionalities - PySayHello(prints greeting message using python), PySum(adds two numbers using python).
+   - Communicates with the API Service via gRPC.
 
 ## Technologies Used
 
