@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package myservice;
+
+service MyService {
+    rpc jsSayHello (JsHelloRequest) returns (JsHelloResponse);
+    rpc jsSum (JsSumRequest) returns (JsSumResponse);
+    rpc pySayHello (PyHelloRequest) returns (PyHelloResponse);
+    rpc pySum (PySumRequest) returns (PySumResponse);
+}
+
+message JsHelloRequest {
+    string name = 1;
+}
+
+message JsHelloResponse {
+    string message = 1;
+}
+
+message JsSumRequest {
+    int32 num1 = 1;
+    int32 num2 = 2;
+}
+
+message JsSumResponse {
+    string result = 1;
+}
+
+message PyHelloRequest {
+    string name = 1;
+}
+
+message PyHelloResponse {
+    string message = 1;
+}
+
+message PySumRequest {
+    int32 num1 = 1;
+    int32 num2 = 2;
+}
+
+message PySumResponse {
+    string result = 1;
+}

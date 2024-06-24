@@ -1,0 +1,16 @@
+{
+  "name": "learning-grpc-protocol",
+  "version": "1.0.0",
+  "description": "Learning gRPC Protocol for communication between microservices",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon jsService.js",
+    "start": "node jsService.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.9",
+    "@grpc/proto-loader": "^0.7.13"
+  }
+}
