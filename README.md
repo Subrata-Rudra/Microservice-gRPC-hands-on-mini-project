@@ -1,6 +1,7 @@
 # Microservice gRPC Hands-On Mini Project
 
 This project demonstrates a microservice architecture using gRPC for inter-service communication. It includes three services:
+
 - **API Service**: Node.js
 - **NodeJS Service**: Node.js
 - **Python Service**: Python
@@ -12,10 +13,12 @@ The primary aim of this project is to showcase the use of gRPC (Remote Procedure
 ## Services
 
 1. **API Service (Node.js)**:
+
    - Handles incoming API requests.
    - Communicates with other services(NodeJS service and Python service) via gRPC.
 
 2. **NodeJS Service (Node.js)**:
+
    - Provides specific functionalities - sayHello(prints greeting message using javascript), sum(adds two numbers using javascript).
    - Communicates with the API Service via gRPC.
 
@@ -31,3 +34,4 @@ The primary aim of this project is to showcase the use of gRPC (Remote Procedure
 
 ## Demonstration
 
+[![Watch the video](./microservice%20thumbnail.png)](https://drive.google.com/file/d/1PT4nh3lqTDkx1qOi9-ycYXNIdwaFb-RO/view?usp=sharing)
